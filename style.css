@@ -1,0 +1,146 @@
+
+
+*{
+    box-sizing: border-box;
+    margin:0 ; 
+    padding: 0;
+    
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+/* [START] HEADER */
+
+nav{
+    height: 100px;
+    background-color: rgb(253, 165, 0);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 60px 10%;
+}
+
+
+.listaNav{
+    list-style:none;
+    
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#offcanvasScrolling{
+    width: 75%;
+    background-color: rgb(255, 255, 255);
+}
+
+.listaNav li {
+
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+
+#nomeSito{
+    font-size: 51px;
+    margin-top:11px;
+    margin-right: auto;
+    font-family: 'Great Vibes', cursive;
+}
+
+#bottoneList{
+    border:none;
+    background-color: transparent;
+    display: none;
+    margin-bottom:12px;
+    color: black;
+}
+
+.aList{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+a:hover{
+    color:aliceblue
+}
+
+
+
+/* [END] HEADER */
+
+/* [START] Content */
+
+.col{
+    height: 400px;
+    width:100%;
+}
+
+.contenuto{
+    background-color: rgb(247, 247, 247);
+    height:390px;
+    width: 325px;
+    margin: 0 auto;
+    margin-top:4.5px ;
+    margin-bottom:4.5px;
+    border-radius: 7px;
+    border: 1px solid black;
+    
+}
+
+h1{
+    font-size:31px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+img{
+    width:300px;
+    height:340px;
+    margin: 5px 13px;
+}
+
+
+.lista{
+    display: flex;
+}
+
+/* [END] Content */
+
+@media screen and (max-width:677px) {
+
+/* [START] Header */
+
+.listaNav{
+    display: none;
+}
+
+#bottoneList{
+    display: block;
+}
+
+
+
+/* [END] Header */
+
+/* [START] Content */
+.row{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.col{
+    width: 100%;
+}
+
+/* [END] Content */
+
+}
